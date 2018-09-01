@@ -1,0 +1,32 @@
+<section class="ui raised segment">
+  <div class="ui center aligned four column grid">
+    <div class="column">
+      <i class="huge user icon"></i>
+      <br>
+      <span style="text-transform: uppercase;">{{member.name}}</span>
+    </div>
+    <div class="column">
+       {{#if author}}
+      <h1>{{firstName}} {{lastName}}</h1
+        {{/if}}
+      
+      {{#if isIdealBodyWeight}}
+        <i class="huge green sliders horizontal icon"></i>
+      {{else}}
+        <i class="huge red sliders horizontal icon"></i>
+      {{/if}}
+      <br>
+      IDEAL WEIGHT INDICATOR
+    </div>
+    <div class="column">
+      <i class="huge heartbeat icon"></i><span style="font-size: 4em; vertical-align: middle;">{{bmi}}</span>
+      <br>
+      <span>BMI</span>
+    </div>
+    <div class="column">
+      <i class="huge user doctor icon"></i>
+      <br>
+      <span style="text-transform: uppercase;">{{bmiCategory}}</span>
+    </div>
+  </div>
+</section>
