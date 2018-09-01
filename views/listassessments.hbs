@@ -1,0 +1,38 @@
+{{> trainer-menu id="dashboard" }}
+{{#each assessments}}
+  <section class="ui raised segment">
+    <table class="ui fixed celled table">
+      <thead>
+        <tr>
+          <th>Weight</th>
+          <th>Chest</th>
+          <th>Thigh</th>
+          <th>Upper Arm</th>
+          <th>Waist</th>
+          <th>Hips</th>
+          <th>Comment</th>
+        </tr>
+      </thead>
+      <tbody>
+        <div class="ui bulleted list">
+          <tr>
+            <td> {{weight}} </td>
+            <td> {{chest}} </td>
+            <td> {{thigh}} </td>
+            <td> {{upperarm}} </td>
+            <td> {{waist}} </td>
+            <td> {{hips}} </td>
+            <td> {{comment}} </td>
+        </div>
+      </tbody>
+    </table>
+  </section>
+
+  <form class="ui stacked segment form" action="/trainerdashboard/addcomment/{{../member.id}}/{{id}}" method="POST">
+    <div class="field">
+      <label>Comments</label>
+      <input type="text" name="comment">
+    </div>
+    <button class="ui blue submit button">Update</button>
+  </form>
+{{/each}}

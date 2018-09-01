@@ -1,0 +1,38 @@
+{{> welcomemenu id="signup"}}
+
+<form class="ui stacked segment form" action="/register" method="POST">
+  <h3 class="ui header">Register</h3>
+  <div class="two fields">
+    <div class="field">
+      <label>Name</label>
+      <input placeholder="Name" type="text"  name="name">
+    </div>
+    <div class="field">
+      <label>Gender</label>
+      <input placeholder="Gender" type="text"  name="gender">
+    </div>
+  </div>
+  <div class="field">
+    <label>Email</label>
+    <input placeholder="Email" type="text" name="email">
+  </div>
+  <div class="field">
+    <label>Password</label>
+    <input type="password" name="password">
+  </div>
+  <div class="field">
+    <label>Address</label>
+    <input placeholder="Address" type="text" name="address">
+  </div>
+  <div class="two fields">
+    <div class="field">
+      <label>Height</label>
+      <input placeholder="Metres" type="text" name="height">
+    </div>
+    <div class="field">
+      <label>Starting Weight</label>
+      <input placeholder="Kg" type="text" name="startingweight">
+    </div>
+  </div>
+  <button class="ui blue submit button">Submit</button>
+</form>

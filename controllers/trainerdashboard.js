@@ -1,0 +1,41 @@
+'use strict';
+
+const membersStore = require('../models/member-store');
+const logger = require('../utils/logger');
+const uuid = require('uuid');
+const accounts = require ('./accounts.js');
+
+const trainerdashboard = {
+  
+  index(request, response) {
+    const members = membersStore.getAllMembers();
+    logger.info(`rendering trainer dashboard`);
+    const viewData = {
+      title: 'trainer dashboard',
+      members: members,
+    };
+    response.render('trainerdashboard', viewData);
+  },
+  
+  trainerAssessment(request, response) {
+    const member = membersStore.getMemberById(request.params.memberId);
+    const assessments = member.assessments;
+    const viewData = {
+      title: 'trainer assessment',
+      member: member,
+      assessments: assessments,
+    };
+    logger.info(`rendering members assessments`);
+    response.render('listassessments', viewData);
+  },
+  
+  addComment(request, response) {
+    const comment = request.body.comment;
+    const member = membersStore.getMemberById(request.params.memberId);
+    membersStore.addComment(comment, member, request.params.assessmentId);
+    logger.info(`Adding comment: ${comment}`);
+    response.redirect('/listassessments/' + request.params.memberId);
+  },
+};
+
+module.exports = trainerdashboard;

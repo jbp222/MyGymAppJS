@@ -1,0 +1,30 @@
+<section class="ui raised segment">
+  <table class="ui fixed celled table">
+    <thead>
+      <tr>
+        <th>Weight</th>
+        <th>Chest</th>
+        <th>Thigh</th>
+        <th>Upper Arm</th>
+        <th>Waist</th>
+        <th>Hips</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <div class="ui bulleted list">
+        {{#each member.assessments}}
+          <tr>
+            <td> {{weight}} </td>
+            <td> {{chest}} </td>
+            <td> {{thigh}} </td>
+            <td> {{upperarm}} </td>
+            <td> {{waist}} </td>
+            <td> {{hips}} </td>
+            <td> {{comment}} </td>
+          </tr>
+        {{/each}}
+      </div>
+    </tbody>
+  </table>
+</section>
