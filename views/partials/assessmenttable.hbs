@@ -9,6 +9,7 @@
             <th>Upper Arm</th>
             <th>Waist</th>
             <th>Hips</th>
+            <th>Trend</th>
             <th>Comment</th>
             <th></th>
         </tr>
@@ -23,6 +24,13 @@
                     <td> {{upperarm}} </td>
                     <td> {{waist}} </td>
                     <td> {{hips}} </td>
+                    <td>
+                        {{#if trend}}
+                            <a class="ui teal tag label"></a>
+                        {{else}}
+                            <a class="ui red tag label"></a>
+                        {{/if}}
+                    </td>
                     <td> {{comment}} </td>
                     <td class="center aligned">
                         <a href="/dashboard/deleteassessment/{{id}}" title="delete">

@@ -11,50 +11,152 @@
       "id": "6ef1c965-2a38-4a18-af2a-2686104e50e4",
       "assessments": [
         {
-          "weight": "55",
-          "chest": "45",
-          "thigh": "15",
-          "upperarm": "15",
-          "waist": "32",
-          "hips": "45",
-          "id": "8b776c9b-bd7d-4e80-bfbf-6ba1df35f8c7",
+          "weight": "10",
+          "chest": "2",
+          "thigh": "2",
+          "upperarm": "22",
+          "waist": "2",
+          "hips": "2",
+          "id": "a0f4a03e-6ee1-4d34-97d9-1ab9d5c7aa7f",
           "comment": [],
-          "date": "1/8/2018",
-          "time": "17:3:31"
+          "time": "23:2:18",
+          "date": "2018-09-01",
+          "trend": true
         },
         {
-          "weight": "55.12",
-          "chest": "20",
-          "thigh": "20",
+          "weight": "15",
+          "chest": "2",
+          "thigh": "22",
+          "upperarm": "2",
+          "waist": "2",
+          "hips": "2",
+          "id": "778bb0d0-9a6c-4d75-b96c-f157524ad7bb",
+          "comment": [],
+          "time": "23:1:46",
+          "date": "2018-09-01",
+          "trend": true
+        },
+        {
+          "weight": "25",
+          "chest": "42",
+          "thigh": "15",
           "upperarm": "12",
           "waist": "55",
-          "hips": "60",
-          "id": "e04b5f5c-b6c5-465b-b04e-feb1a87488af",
+          "hips": "55",
+          "id": "09cc9011-7df9-40b4-bad0-c2ec79f90e84",
           "comment": [],
-          "date": "1/8/2018",
-          "time": "17:21:16"
+          "time": "23:1:1",
+          "date": "2018-09-01",
+          "trend": true
+        },
+        {
+          "weight": "45",
+          "chest": "42",
+          "thigh": "15",
+          "upperarm": "12",
+          "waist": "30",
+          "hips": "55",
+          "id": "44b724ca-def4-4b04-aa29-c3d6dd168995",
+          "comment": [],
+          "time": "22:54:14",
+          "date": "2018-09-01",
+          "trend": true
+        },
+        {
+          "weight": "40",
+          "chest": "44",
+          "thigh": "44",
+          "upperarm": "44",
+          "waist": "44",
+          "hips": "44",
+          "id": "7426b1a1-ac8e-4638-ae36-af6aec5021b7",
+          "comment": [],
+          "time": "22:55:13",
+          "date": "2018-09-01",
+          "trend": true
+        },
+        {
+          "weight": "40",
+          "chest": "2",
+          "thigh": "2",
+          "upperarm": "222",
+          "waist": "2",
+          "hips": "2",
+          "id": "7ea08d21-b47e-4e03-ac43-65ab0594e154",
+          "comment": [],
+          "time": "22:55:45",
+          "date": "2018-09-01",
+          "trend": false
+        },
+        {
+          "weight": "30",
+          "chest": "3",
+          "thigh": "3",
+          "upperarm": "3",
+          "waist": "3",
+          "hips": "3",
+          "id": "fb327e07-2adf-492b-9b89-9ebd107ff8ed",
+          "comment": [],
+          "time": "22:56:14",
+          "date": "2018-09-01",
+          "trend": true
+        },
+        {
+          "weight": "55",
+          "chest": "2",
+          "thigh": "22",
+          "upperarm": "2",
+          "waist": "2",
+          "hips": "2",
+          "id": "e595fce9-47fd-4d24-955a-9d9cf8f32c3f",
+          "comment": [],
+          "time": "23:2:44",
+          "date": "2018-09-01",
+          "trend": false
         }
       ],
       "goals": [
         {
-          "futuredate": "2018-09-10",
-          "measurement": "12",
-          "id": "ee0ba70f-14f0-4bc4-aa88-f1656badc806"
-        },
-        {
-          "futuredate": "2018-09-25",
+          "futuredate": "2018-09-01",
           "measurement": "50",
-          "id": "baea8fdb-eb13-42ab-8668-00164588daa2"
+          "id": "d8bb63c8-8fef-4160-8fb4-2d958df89141",
+          "status": "Achieved"
         },
         {
-          "futuredate": "2018-09-19",
-          "measurement": "53",
-          "id": "6549eab5-c29c-49c6-8447-8499c7c6b2ee"
+          "futuredate": "2018-09-01",
+          "measurement": "40",
+          "id": "d1d033db-48b1-4709-b691-f7fea4435c13",
+          "status": "Achieved"
         },
         {
-          "futuredate": "2018-09-18",
-          "measurement": "54",
-          "id": "fb8fdaab-99d7-491b-a40e-7d2773b70c7e"
+          "futuredate": "2018-09-01",
+          "measurement": "35",
+          "id": "1b6b5e53-c41a-42a0-8897-d8e61b193268",
+          "status": "Achieved"
+        },
+        {
+          "futuredate": "2018-08-31",
+          "measurement": "30",
+          "id": "c52c7d6b-7423-47cd-8606-82fe31b1c41a",
+          "status": "Missed"
+        },
+        {
+          "futuredate": "2018-08-30",
+          "measurement": "25",
+          "id": "1e979c91-4001-4618-90f7-a2568b9790cd",
+          "status": "Missed"
+        },
+        {
+          "futuredate": "2018-08-31",
+          "measurement": "20",
+          "id": "489940a1-a53d-4488-9d4f-ae7c4d81db4d",
+          "status": "Missed"
+        },
+        {
+          "futuredate": "2018-09-02",
+          "measurement": "15",
+          "id": "1c57371e-6c8f-40f9-9532-0f552f483e80",
+          "status": "Open"
         }
       ]
     }

@@ -63,6 +63,15 @@ const analytics = {
         return isIdealWeight;
     },
 
-}
+    determineTrend(member, weight){
+        let trend = true;
+        if (member.assessments.length < 1){
+            trend = member.startingweight > weight;
+        } else {
+            trend = member.assessments[member.assessments.length - 1].weight > weight;
+        }
+        return trend;
+    },
 
+};
 module.exports = analytics;

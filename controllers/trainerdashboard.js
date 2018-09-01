@@ -46,6 +46,8 @@ const trainerdashboard = {
     addGoal(request, response) {
         const goal = request.body;
         goal.id = uuid();
+        goal.status = "Open";
+        goal.futuredate = goal.futuredate.toISOString().split("T")[0];
         const member = membersStore.getMemberById(request.params.memberId);
         logger.info(`adding goal for member id: ${member.id}`);
         membersStore.addGoal(member, goal);

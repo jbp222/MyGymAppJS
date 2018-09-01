@@ -18,6 +18,8 @@ const dashboard = {
         const viewData = {
             title: 'dashboard',
             member: member,
+            // reverse the order of the assessments array
+            // (when created they are added to the end of the array, so reversing the array is a chronological reverse)
             assessments: member.assessments.reverse(),
             bmi: bmi,
             bmiCategory: bmiCategory,
@@ -31,9 +33,12 @@ const dashboard = {
         assessment.id = uuid();
         assessment.comment = [];
         const date = new Date();
-        assessment.date = date.getDate().toString() + "/" + date.getMonth().toString() + "/" + date.getFullYear().toString();
         assessment.time = date.getHours().toString() + ":" + date.getMinutes().toString() + ":" + date.getSeconds().toString();
+        // using international standard time, then splitting on letter 'T' and taking the date only.
+        // http://monkeyraptor.johanpaul.net/2015/09/javascript-how-to-extract-date-from-iso.html
+        assessment.date = date.toISOString().split('T')[0];
         const member = accounts.getCurrentMember(request);
+        assessment.trend = analytics.determineTrend(member, assessment.weight);
         logger.info(`adding assessment id: ${assessment.id} for member id: ${member.id}`);
         membersStore.addAssessment(member, assessment);
         response.redirect('/dashboard');
@@ -50,6 +55,7 @@ const dashboard = {
     addGoal(request, response) {
         const goal = request.body;
         goal.id = uuid();
+        goal.status = "Open";
         const member = accounts.getCurrentMember(request);
         logger.info(`adding goal for member id: ${member.id}`);
         membersStore.addGoal(member, goal);
