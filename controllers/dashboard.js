@@ -18,6 +18,7 @@ const dashboard = {
         const viewData = {
             title: 'dashboard',
             member: member,
+            assessments: member.assessments.reverse(),
             bmi: bmi,
             bmiCategory: bmiCategory,
             isIdealBodyWeight: isIdealBodyWeight,
