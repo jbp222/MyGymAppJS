@@ -23,5 +23,6 @@ router.get('/dashboard', dashboard.index);
 router.post('/dashboard/addassessment', dashboard.addAssessment);
 router.get('/listassessments/:memberId', trainerdashboard.trainerAssessment);
 router.get('/dashboard/deleteassessment/:assessmentId', dashboard.deleteAssessment);
+router.get('/trainerdashboard/deletemember/:memberId', trainerdashboard.deleteMember);
 
 module.exports = router;
