@@ -29,6 +29,9 @@ const dashboard = {
         const assessment = request.body;
         assessment.id = uuid();
         assessment.comment = [];
+        const date = new Date();
+        assessment.date = date.getDate().toString() + "/" + date.getMonth().toString() + "/" + date.getFullYear().toString();
+        assessment.time = date.getHours().toString() + ":" + date.getMinutes().toString() + ":" + date.getSeconds().toString();
         const member = accounts.getCurrentMember(request);
         logger.info(`adding assessment id: ${assessment.id} for member id: ${member.id}`);
         membersStore.addAssessment(member, assessment);
