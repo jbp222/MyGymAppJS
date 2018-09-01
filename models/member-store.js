@@ -63,6 +63,12 @@ const membersStore = {
         assessment.comment = comment;
         this.store.save();
     },
+
+    addGoal(member, goal) {
+        member.goals.push(goal);
+        this.store.save();
+    },
+
 };
 
 module.exports = membersStore;

@@ -45,6 +45,15 @@ const dashboard = {
         membersStore.deleteAssessment(member, assessmentId);
         response.redirect('/dashboard');
     },
+
+    addGoal(request, response) {
+        const goal = request.body;
+        goal.id = uuid();
+        const member = accounts.getCurrentMember(request);
+        logger.info(`adding goal for member id: ${member.id}`);
+        membersStore.addGoal(member, goal);
+        response.redirect('/dashboard');
+    },
 };
 
 module.exports = dashboard;

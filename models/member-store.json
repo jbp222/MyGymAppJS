@@ -7,53 +7,29 @@
       "password": "secret",
       "address": "springfield",
       "height": "1.5",
-      "id": "2196a7be-940f-4608-ac26-5a2bcab2ff0f",
+      "startingweight": "50",
+      "id": "6ef1c965-2a38-4a18-af2a-2686104e50e4",
       "assessments": [
         {
-          "weight": "50",
-          "chest": "12",
-          "thigh": "12",
-          "upperarm": "12",
-          "waist": "12",
-          "hips": "12",
-          "id": "d51c8744-76aa-49eb-b3bf-92b40385f895",
-          "comment": "good"
-        },
-        {
           "weight": "55",
-          "chest": "20",
-          "thigh": "20",
-          "upperarm": "20",
-          "waist": "20",
-          "hips": "20",
-          "id": "2291a38d-b5b7-4621-864a-c347d5796530",
-          "comment": []
-        },
-        {
-          "weight": "52",
-          "chest": "20",
-          "thigh": "40",
-          "upperarm": "30",
-          "waist": "30",
-          "hips": "20",
-          "id": "24c90090-252e-47b2-8fc7-a9858d1bdaad",
-          "comment": [],
-          "date": "1/8/2018"
-        },
-        {
-          "weight": "400",
-          "chest": "7",
-          "thigh": "7",
-          "upperarm": "7",
-          "waist": "7",
-          "hips": "7",
-          "id": "a409a330-0650-438d-823f-032d447193ae",
+          "chest": "45",
+          "thigh": "15",
+          "upperarm": "15",
+          "waist": "32",
+          "hips": "45",
+          "id": "8b776c9b-bd7d-4e80-bfbf-6ba1df35f8c7",
           "comment": [],
           "date": "1/8/2018",
-          "time": "16:46:10"
+          "time": "17:3:31"
         }
       ],
-      "startingweight": "95"
+      "goals": [
+        {
+          "futuredate": "2018-09-10",
+          "measurement": "12",
+          "id": "ee0ba70f-14f0-4bc4-aa88-f1656badc806"
+        }
+      ]
     }
   ]
 }

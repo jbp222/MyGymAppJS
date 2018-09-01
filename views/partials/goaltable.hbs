@@ -1,0 +1,21 @@
+<section class="ui raised segment">
+    <h2>Goals</h2>
+    <table class="ui fixed celled table">
+        <thead>
+        <tr>
+            <th>Future Date</th>
+            <th>Measurement</th>
+        </tr>
+        </thead>
+        <tbody>
+        <div class="ui bulleted list">
+            {{#each member.goals}}
+                <tr>
+                    <td> {{futuredate}} </td>
+                    <td> {{measurement}} </td>
+                </tr>
+            {{/each}}
+        </div>
+        </tbody>
+    </table>
+</section>
