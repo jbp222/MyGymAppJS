@@ -1,4 +1,20 @@
 {{> trainer-menu id="dashboard" }}
+<h2>Add Goal</h2>
+<form class="ui segment form" action="/trainerdashboard/addgoal/{{member.id}}" method="POST">
+    <div class="two fields">
+        <div class="field">
+            <label>Future Date</label>
+            <input placeholder="dd/mm/yyyy" type="date" name="futuredate">
+        </div>
+        <div class="field">
+            <label>Measurement</label>
+            <input placeholder="Goal weight in kg" type="text" name="measurement">
+        </div>
+    </div>
+    <button class="ui blue submit button">Add Goal</button>
+</form>
+
+<h2>Assessments</h2>
 {{#each assessments}}
     <section class="ui raised segment">
         <table class="ui fixed celled table">

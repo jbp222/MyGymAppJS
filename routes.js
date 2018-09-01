@@ -22,6 +22,7 @@ router.post('/trainerdashboard/addcomment/:memberId/:assessmentId', trainerdashb
 router.get('/dashboard', dashboard.index);
 router.post('/dashboard/addassessment', dashboard.addAssessment);
 router.post('/dashboard/addgoal', dashboard.addGoal);
+router.post('/trainerdashboard/addgoal/:memberId', trainerdashboard.addGoal);
 router.get('/listassessments/:memberId', trainerdashboard.trainerAssessment);
 router.get('/dashboard/deleteassessment/:assessmentId', dashboard.deleteAssessment);
 router.get('/trainerdashboard/deletemember/:memberId', trainerdashboard.deleteMember);

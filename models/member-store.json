@@ -40,6 +40,21 @@
           "futuredate": "2018-09-10",
           "measurement": "12",
           "id": "ee0ba70f-14f0-4bc4-aa88-f1656badc806"
+        },
+        {
+          "futuredate": "2018-09-25",
+          "measurement": "50",
+          "id": "baea8fdb-eb13-42ab-8668-00164588daa2"
+        },
+        {
+          "futuredate": "2018-09-19",
+          "measurement": "53",
+          "id": "6549eab5-c29c-49c6-8447-8499c7c6b2ee"
+        },
+        {
+          "futuredate": "2018-09-18",
+          "measurement": "54",
+          "id": "fb8fdaab-99d7-491b-a40e-7d2773b70c7e"
         }
       ]
     }

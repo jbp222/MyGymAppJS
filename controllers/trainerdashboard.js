@@ -42,6 +42,15 @@ const trainerdashboard = {
         logger.info(`Deleting member: ` + request.params.memberId);
         response.redirect('/trainerdashboard');
     },
+
+    addGoal(request, response) {
+        const goal = request.body;
+        goal.id = uuid();
+        const member = membersStore.getMemberById(request.params.memberId);
+        logger.info(`adding goal for member id: ${member.id}`);
+        membersStore.addGoal(member, goal);
+        response.redirect('/trainerdashboard');
+    },
 };
 
 module.exports = trainerdashboard;
