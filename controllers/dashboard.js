@@ -15,15 +15,20 @@ const dashboard = {
         const bmiCategory = analytics.determineBMICategory(bmi);
         const isIdealBodyWeight = analytics.isIdealBodyWeight(member);
         logger.info("ideal body weight: " + isIdealBodyWeight);
+        // to avoid changing original array, I used slice to create a copy of it and then reverse the copy, link:
+        // https://stackoverflow.com/questions/30610523/reverse-array-in-javascript-without-mutating-original-array
+        const assessments = member.assessments.slice().reverse();
         const viewData = {
             title: 'dashboard',
             member: member,
             // reverse the order of the assessments array
             // (when created they are added to the end of the array, so reversing the array is a chronological reverse)
-            assessments: member.assessments.reverse(),
+            assessments: assessments,
             bmi: bmi,
             bmiCategory: bmiCategory,
             isIdealBodyWeight: isIdealBodyWeight,
+            achieved: analytics.calculateNumberOfAchievedGoals(member),
+            missed: analytics.calculateNumberOfMissedGoals(member),
         };
         response.render('dashboard', viewData);
     },

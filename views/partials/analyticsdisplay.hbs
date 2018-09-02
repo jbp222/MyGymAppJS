@@ -1,5 +1,5 @@
 <section class="ui raised segment">
-    <div class="ui center aligned four column grid">
+    <div class="ui center aligned five column grid">
         <div class="column">
             <i class="huge user icon"></i>
             <br>
@@ -19,7 +19,7 @@
             IDEAL WEIGHT INDICATOR
         </div>
         <div class="column">
-            <i class="huge heartbeat icon"></i><span style="font-size: 4em; vertical-align: middle;">{{bmi}}</span>
+            <i class="huge heartbeat icon"></i><span style="font-size: 3em; vertical-align: middle;">{{bmi}}</span>
             <br>
             <span>BMI</span>
         </div>
@@ -27,6 +27,11 @@
             <i class="huge user doctor icon"></i>
             <br>
             <span style="text-transform: uppercase;">{{bmiCategory}}</span>
+        </div>
+        <div class="column">
+            <i class="huge trophy icon"></i><br>
+            <span style="text-transform: uppercase;">Achieved: {{achieved}}</span>
+            <span style="text-transform: uppercase;">Missed: {{missed}}</span>
         </div>
     </div>
 </section>

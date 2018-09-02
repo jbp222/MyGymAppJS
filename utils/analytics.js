@@ -73,5 +73,27 @@ const analytics = {
         return trend;
     },
 
+    calculateNumberOfAchievedGoals(member) {
+        let achieved = 0;
+        for (let i = 0; i < member.goals.length; i++) {
+            const goalStatus = member.goals[i].status;
+            if(goalStatus === "Achieved") {
+                achieved++;
+            }
+        }
+        return achieved;
+    },
+
+    calculateNumberOfMissedGoals(member) {
+        let missed = 0;
+        for (let i = 0; i < member.goals.length; i++) {
+            const goalStatus = member.goals[i].status;
+            if(goalStatus === "Missed") {
+                missed++;
+            }
+        }
+        return missed;
+    },
+
 };
 module.exports = analytics;

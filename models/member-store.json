@@ -11,154 +11,33 @@
       "id": "6ef1c965-2a38-4a18-af2a-2686104e50e4",
       "assessments": [
         {
-          "weight": "10",
-          "chest": "2",
-          "thigh": "2",
-          "upperarm": "22",
-          "waist": "2",
-          "hips": "2",
-          "id": "a0f4a03e-6ee1-4d34-97d9-1ab9d5c7aa7f",
+          "weight": "55",
+          "chest": "1",
+          "thigh": "11",
+          "upperarm": "1",
+          "waist": "1",
+          "hips": "1",
+          "id": "d334087e-1b28-41a0-9424-5390e72f91aa",
           "comment": [],
-          "time": "23:2:18",
+          "time": "23:36:16",
           "date": "2018-09-01",
-          "trend": true
-        },
-        {
-          "weight": "15",
-          "chest": "2",
-          "thigh": "22",
-          "upperarm": "2",
-          "waist": "2",
-          "hips": "2",
-          "id": "778bb0d0-9a6c-4d75-b96c-f157524ad7bb",
-          "comment": [],
-          "time": "23:1:46",
-          "date": "2018-09-01",
-          "trend": true
-        },
-        {
-          "weight": "25",
-          "chest": "42",
-          "thigh": "15",
-          "upperarm": "12",
-          "waist": "55",
-          "hips": "55",
-          "id": "09cc9011-7df9-40b4-bad0-c2ec79f90e84",
-          "comment": [],
-          "time": "23:1:1",
-          "date": "2018-09-01",
-          "trend": true
+          "trend": false
         },
         {
           "weight": "45",
-          "chest": "42",
-          "thigh": "15",
-          "upperarm": "12",
-          "waist": "30",
-          "hips": "55",
-          "id": "44b724ca-def4-4b04-aa29-c3d6dd168995",
+          "chest": "23",
+          "thigh": "23",
+          "upperarm": "23",
+          "waist": "23",
+          "hips": "23",
+          "id": "c26b831e-bba4-45b6-8169-d6b261d5c762",
           "comment": [],
-          "time": "22:54:14",
+          "time": "23:36:25",
           "date": "2018-09-01",
           "trend": true
-        },
-        {
-          "weight": "40",
-          "chest": "44",
-          "thigh": "44",
-          "upperarm": "44",
-          "waist": "44",
-          "hips": "44",
-          "id": "7426b1a1-ac8e-4638-ae36-af6aec5021b7",
-          "comment": [],
-          "time": "22:55:13",
-          "date": "2018-09-01",
-          "trend": true
-        },
-        {
-          "weight": "40",
-          "chest": "2",
-          "thigh": "2",
-          "upperarm": "222",
-          "waist": "2",
-          "hips": "2",
-          "id": "7ea08d21-b47e-4e03-ac43-65ab0594e154",
-          "comment": [],
-          "time": "22:55:45",
-          "date": "2018-09-01",
-          "trend": false
-        },
-        {
-          "weight": "30",
-          "chest": "3",
-          "thigh": "3",
-          "upperarm": "3",
-          "waist": "3",
-          "hips": "3",
-          "id": "fb327e07-2adf-492b-9b89-9ebd107ff8ed",
-          "comment": [],
-          "time": "22:56:14",
-          "date": "2018-09-01",
-          "trend": true
-        },
-        {
-          "weight": "55",
-          "chest": "2",
-          "thigh": "22",
-          "upperarm": "2",
-          "waist": "2",
-          "hips": "2",
-          "id": "e595fce9-47fd-4d24-955a-9d9cf8f32c3f",
-          "comment": [],
-          "time": "23:2:44",
-          "date": "2018-09-01",
-          "trend": false
         }
       ],
-      "goals": [
-        {
-          "futuredate": "2018-09-01",
-          "measurement": "50",
-          "id": "d8bb63c8-8fef-4160-8fb4-2d958df89141",
-          "status": "Achieved"
-        },
-        {
-          "futuredate": "2018-09-01",
-          "measurement": "40",
-          "id": "d1d033db-48b1-4709-b691-f7fea4435c13",
-          "status": "Achieved"
-        },
-        {
-          "futuredate": "2018-09-01",
-          "measurement": "35",
-          "id": "1b6b5e53-c41a-42a0-8897-d8e61b193268",
-          "status": "Achieved"
-        },
-        {
-          "futuredate": "2018-08-31",
-          "measurement": "30",
-          "id": "c52c7d6b-7423-47cd-8606-82fe31b1c41a",
-          "status": "Missed"
-        },
-        {
-          "futuredate": "2018-08-30",
-          "measurement": "25",
-          "id": "1e979c91-4001-4618-90f7-a2568b9790cd",
-          "status": "Missed"
-        },
-        {
-          "futuredate": "2018-08-31",
-          "measurement": "20",
-          "id": "489940a1-a53d-4488-9d4f-ae7c4d81db4d",
-          "status": "Missed"
-        },
-        {
-          "futuredate": "2018-09-02",
-          "measurement": "15",
-          "id": "1c57371e-6c8f-40f9-9532-0f552f483e80",
-          "status": "Open"
-        }
-      ]
+      "goals": []
     }
   ]
 }

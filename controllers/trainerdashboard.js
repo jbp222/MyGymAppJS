@@ -23,7 +23,7 @@ const trainerdashboard = {
         const viewData = {
             title: 'trainer assessment',
             member: member,
-            assessments: assessments.reverse(),
+            assessments: assessments.slice().reverse(),
         };
         logger.info(`rendering members assessments`);
         response.render('listassessments', viewData);
